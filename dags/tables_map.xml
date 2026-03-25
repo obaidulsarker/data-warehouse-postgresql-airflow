@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sources>
+    <source source_db_name="mohajon" source_conn_id="source_conn_id_mohajon" target_db_name="carrybee_dw" target_conn_id="target_conn_id_dw">
+        <table table_no="1" source_schema="public" source_table="branches" target_schema="bronze_mohajon" target_table="branches" pk_column="id" ts_column="updated_at"/>
+        <table table_no="2" source_schema="public" source_table="hub_ledgers" target_schema="bronze_mohajon" target_table="hub_ledgers" pk_column="id" ts_column="updated_at"/>
+        <table table_no="3" source_schema="public" source_table="hub_payment_invoices" target_schema="bronze_mohajon" target_table="hub_payment_invoices" pk_column="id" ts_column="updated_at"/>
+        <table table_no="4" source_schema="public" source_table="hub_payment_transactions" target_schema="bronze_mohajon" target_table="hub_payment_transactions" pk_column="id" ts_column="updated_at"/>
+        <table table_no="5" source_schema="public" source_table="hub_payments" target_schema="bronze_mohajon" target_table="hub_payments" pk_column="id" ts_column="updated_at"/>
+        <table table_no="6" source_schema="public" source_table="order_invoices" target_schema="bronze_mohajon" target_table="order_invoices" pk_column="id" ts_column="updated_at"/>
+        <table table_no="7" source_schema="public" source_table="payment_invoices" target_schema="bronze_mohajon" target_table="payment_invoices" pk_column="id" ts_column="updated_at"/>
+        <table table_no="8" source_schema="public" source_table="recoveries" target_schema="bronze_mohajon" target_table="recoveries" pk_column="id" ts_column="updated_at"/>
+        <table table_no="9" source_schema="public" source_table="wallet_providers" target_schema="bronze_mohajon" target_table="wallet_providers" pk_column="id" ts_column="updated_at"/>
+    </source>
+    <source source_db_name="oms" source_conn_id="source_conn_id_oms" target_db_name="carrybee_dw" target_conn_id="target_conn_id_dw">
+        <table table_no="1" source_schema="public" source_table="orders" target_schema="bronze_oms" target_table="orders" pk_column="id" ts_column="updated_at"/>
+        <table table_no="2" source_schema="public" source_table="order_logs" target_schema="bronze_oms" target_table="order_logs" pk_column="id" ts_column="updated_at"/>
+        <table table_no="3" source_schema="public" source_table="hubs" target_schema="bronze_oms" target_table="hubs" pk_column="id" ts_column="updated_at"/>
+        <table table_no="4" source_schema="public" source_table="cities" target_schema="bronze_oms" target_table="cities" pk_column="id" ts_column="updated_at"/>
+        <table table_no="5" source_schema="public" source_table="zones" target_schema="bronze_oms" target_table="zones" pk_column="id" ts_column="updated_at"/>
+        <table table_no="6" source_schema="public" source_table="customers" target_schema="bronze_oms" target_table="customers" pk_column="id" ts_column="updated_at"/>
+        <table table_no="7" source_schema="public" source_table="transfer_statuses" target_schema="bronze_oms" target_table="transfer_statuses" pk_column="id" ts_column="updated_at"/>
+        <table table_no="8" source_schema="public" source_table="areas" target_schema="bronze_oms" target_table="areas" pk_column="id" ts_column="updated_at"/>
+    </source>
+    <source source_db_name="pegasus" source_conn_id="source_conn_id_pegasus" target_db_name="carrybee_dw" target_conn_id="target_conn_id_dw">
+        <table table_no="1" source_schema="public" source_table="agents" target_schema="bronze_pegasus" target_table="agents" pk_column="id" ts_column="updated_at"/>
+        <table table_no="2" source_schema="public" source_table="merchants" target_schema="bronze_pegasus" target_table="merchants" pk_column="id" ts_column="updated_at"/>
+        <table table_no="3" source_schema="public" source_table="routes" target_schema="bronze_pegasus" target_table="routes" pk_column="id" ts_column="updated_at"/>
+        <table table_no="4" source_schema="public" source_table="clusters" target_schema="bronze_pegasus" target_table="clusters" pk_column="id" ts_column="updated_at"/>
+        <table table_no="5" source_schema="public" source_table="regions" target_schema="bronze_pegasus" target_table="regions" pk_column="id" ts_column="updated_at"/>
+        <table table_no="6" source_schema="public" source_table="stores" target_schema="bronze_pegasus" target_table="stores" pk_column="id" ts_column="updated_at"/>
+        <table table_no="7" source_schema="public" source_table="businesses" target_schema="bronze_pegasus" target_table="businesses" pk_column="id" ts_column="updated_at"/>
+        <table table_no="8" source_schema="public" source_table="business_merchants" target_schema="bronze_pegasus" target_table="business_merchants" pk_column="id" ts_column="updated_at"/>
+    </source>
+</sources>
