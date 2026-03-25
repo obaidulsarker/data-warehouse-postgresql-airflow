@@ -1,4 +1,4 @@
-# Airflow Setup
+#Airflow Setup
 
 ### Install docker engine and docker compose
 
@@ -159,5 +159,6 @@ Use TaskGroup or dynamic DAG generation at parse-time to avoid potential runtime
 
 Add unit tests & local runner script for dev.
 
-Use CDC (Debezium/logical replication) for near-real-time, low-latency sync.#   d a t a - w a r e h o u s e - p o s t g r e s q l - a i r f l o w  
+Use CDC (Debezium/logical replication) for near-real-time, low-latency sync.#   d a t a - w a r e h o u s e - p o s t g r e s q l - a i r f l o w 
+ 
  
